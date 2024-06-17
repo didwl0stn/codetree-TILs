@@ -7,6 +7,6 @@ for i in range(21):
     if (a//b==0):
         a*=10
     else:
-        a = a%b
+        a = (a%b)*10
 
 print(answer)
