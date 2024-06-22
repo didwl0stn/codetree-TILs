@@ -3,7 +3,7 @@ arr1=list(map(int,input().split()))
 arr2=list(map(int,input().split()))
 
 for i in range(len(arr1)-len(arr2)):
-    if arr2==arr1[i:len(arr1)-len(arr2)+i]:
+    if arr2==arr1[i:len(arr2)+i]:
         print('Yes')
         break
     else:
