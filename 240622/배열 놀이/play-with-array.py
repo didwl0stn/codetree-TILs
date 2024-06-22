@@ -15,4 +15,5 @@ while(q>0):
         a,s,e=command
         for i in arr[int(s)-1:int(e)]:
             print(i,end=" ")
+        print("")
     q-=1
