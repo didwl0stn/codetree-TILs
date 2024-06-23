@@ -7,10 +7,10 @@ arr = [[0 for _ in range(m)] for _ in range(n)]
 # 숫자 채우기
 num = 1
 for k in range(n + m - 1):
-    for j in range(n):
-        for i in range(m):
+    for i in range(n):
+        for j in range(m):
             if j + i == k:
-                arr[j][i] = num
+                arr[i][j] = num
                 num += 1
 
 # 배열 출력
