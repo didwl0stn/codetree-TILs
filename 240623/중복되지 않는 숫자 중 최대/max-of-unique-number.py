@@ -6,5 +6,7 @@ for i in arr:
         pass
     else:
         new.append(i)
-
-print(max(new))
+if (len(new)):
+    print(max(new))
+else:
+    print(-1)
