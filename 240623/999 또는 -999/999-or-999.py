@@ -1,2 +1,2 @@
 arr = list(map(int,input().split()))
-print(max(arr),min(arr))
+print(max(arr[:-1]),min(arr[:-1]))
