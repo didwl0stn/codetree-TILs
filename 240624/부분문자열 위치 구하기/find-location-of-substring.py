@@ -11,3 +11,4 @@ for i in range(len(string)-len(target)+1):
         if (j==len(target)-1):
             print(i)
             sys.exit()
+print(answer)
