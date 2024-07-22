@@ -3,7 +3,7 @@ a = list(input().split())
 b = list(input().split())
 
 def func(a,b):
-    for i in range(0, len(a)-len(b)):
+    for i in range(0, len(a)-len(b)+1):
         for j in range(len(b)):
             if int(a[i+j]) == int(b[j]):
                 if (j == len(b)-1):
