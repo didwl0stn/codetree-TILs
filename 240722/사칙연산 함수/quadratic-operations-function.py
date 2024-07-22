@@ -6,7 +6,7 @@ def f1(a,o,c):
     if (o=='-'):
         return a-c
     if (o=='/'):
-        return a/c
+        return a//c
     if (o=='*'):
         return a*c
 print(f"{a} {o} {c} = ",f1(a,o,c),sep="")
