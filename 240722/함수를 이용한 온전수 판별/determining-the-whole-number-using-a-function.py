@@ -10,7 +10,7 @@ def f1(n):
     
     return True
 cnt = 0
-for i in range(a,b):
+for i in range(a,b+1):
     if (f1(i)==True):
         cnt+=1
 
