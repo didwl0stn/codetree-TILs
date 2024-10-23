@@ -10,4 +10,4 @@ for i in range(len(arr)):
         cnt += 1
 
 
-print(f'{sums} {sums/cnt}')
+print(f'{sums} {sums/cnt:.1f}')
