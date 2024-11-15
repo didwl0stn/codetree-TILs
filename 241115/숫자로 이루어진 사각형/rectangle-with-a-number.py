@@ -6,6 +6,6 @@ def square(n):
         temp += 1
         if temp==10:
             temp = 1
-        if i%4 == 0:
+        if i%n == 0:
             print("")
 square(n)
