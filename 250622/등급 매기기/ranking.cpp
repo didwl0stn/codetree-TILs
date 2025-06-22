@@ -14,7 +14,7 @@ int main() {
     else if (a>=70) {
         cout << 'C';
     }
-    else if (a>=70) {
+    else if (a>=60) {
         cout << "D";
     }
     else {
