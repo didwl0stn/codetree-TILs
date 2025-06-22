@@ -17,7 +17,7 @@ int main() {
     else if (c=='C') {
         cout << "Usually";
     }
-    else if (c=='C') {
+    else if (c=='D') {
         cout << "Effort";
     }
     else {
