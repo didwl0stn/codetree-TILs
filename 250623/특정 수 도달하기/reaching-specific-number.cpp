@@ -14,6 +14,10 @@ int main() {
             break;
         }
         sums+=arr[i];
+
+        if(i==9) {
+            cout << sums << " " << (double)sums/10;
+        }
     }
     return 0;
 }
