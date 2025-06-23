@@ -16,12 +16,12 @@ int main() {
     int cnt = 0;
     for (int i = 0; i<N; i++) {
         ans[nums[i]]+=1;
-        if (ans[nums[i]]>=2) {
+        if (ans[nums[i]]==2) {
             ans[nums[i]] = -1000;
         }
     }
 
-    for (int j = N-1; j>=0; j--) {
+    for (int j = 1000; j>=0; j--) {
         if (ans[j]==1) {
             max=j;
             break;
