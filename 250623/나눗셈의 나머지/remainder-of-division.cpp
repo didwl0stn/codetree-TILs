@@ -6,7 +6,7 @@ int main() {
     int a,b;
     int mod[10] = {0,};
     cin >> a >> b;
-    while (a!=0) {
+    while (a>1) {
         int temp = a%b;
         mod[temp]+=1;
         a = a/b;
