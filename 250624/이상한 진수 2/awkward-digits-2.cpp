@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+string a;
+
+int main() {
+    cin >> a;
+
+    // Please write your code here.
+    for (int i=0; i<a.length(); i++) {
+        if (a[i]=='0') {
+            a[i]='1';
+            break;
+        }
+    }
+
+    int temp = a.length();
+
+    int res = 0;
+    for (int i =temp-1; i>=0; i--) {
+        int val = a[temp-i-1] - '0';
+        
+        if (val != 0)
+            res += pow(val*2,i);
+        
+     
+    }
+    cout << res;
+
+    return 0;
+}
