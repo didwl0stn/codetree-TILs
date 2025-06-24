@@ -12,21 +12,21 @@ int main() {
     int max = 0;
     int min = 0;
 
-    if (l1 > l2 && l1 > l3) 
+    if (l1 >= l2 && l1 >= l3) 
         max = l1;
-   if (l1 < l2 && l1 < l3) 
+   if (l1 <= l2 && l1 <= l3) 
         min = l1;
     
-    if (l2 > l1 && l2 > l3) 
+    if (l2 >= l1 && l2 >= l3) 
         max = l2;
     
-    if (l2 < l1 && l2 < l3) 
+    if (l2 <= l1 && l2 <= l3) 
         min= l2;
     
-    if (l3> l2 && l3 > l1) 
+    if (l3>= l2 && l3 >= l1) 
         max = l3;
     
-    if (l3 < l2 && l3 < l1) 
+    if (l3 <= l2 && l3 <= l1) 
         min = l3;
     
     cout << max - min;
