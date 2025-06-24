@@ -18,6 +18,9 @@ int main() {
             a[i]='1';
             break;
         }
+        else if (i== a.length()-1) {
+            a[i] = '0';
+        }
     }
 
     int temp = a.length();
