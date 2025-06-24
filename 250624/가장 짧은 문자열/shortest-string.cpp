@@ -9,7 +9,8 @@ int main() {
     int l1 = s1.length();
     int l2 = s2.length();
     int l3 = s3.length();
-    int max,min;
+    int max = 0;
+    int min = 0;
 
     if (l1 > l2 && l1 > l3) 
         max = l1;
