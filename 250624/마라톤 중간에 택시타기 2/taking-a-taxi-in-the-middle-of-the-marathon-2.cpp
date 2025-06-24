@@ -18,9 +18,9 @@ int main() {
     // Please write your code here.
     int minDis = INT_MAX;
     for (int i=1; i<n-1; i++) {
-        int temp = x[0];
-        int ex_x = y[0];
-        int ex_y=0;
+        int temp = 0;
+        int ex_x = x[0];
+        int ex_y=y[0];
         for (int j=1; j<n; j++) {
             if (j!=i) {
                 temp += abs(x[j] - ex_x) + abs(y[j] - ex_y);
