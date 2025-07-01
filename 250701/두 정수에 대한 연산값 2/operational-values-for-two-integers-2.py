@@ -3,9 +3,14 @@ a, b = map(int, input().split())
 # Please write your code here.
 
 def temp(a,b):
-    minVal = min(a,b) + 10
-    maxVal = max(a,b)*2
-    return minVal, maxVal
+    if (a>b):
+        a*=2
+        b+=10
+    else:
+        a+=10
+        b*=2
+    
+    return a,b
 
 a,b = temp(a,b)
 print(a,b,sep=" ")
