@@ -21,6 +21,7 @@ ans=[]
 for i in range(n):
     ans.append(Temp(date[i],day[i],weather[i]))
 
+ans.sort(key = lambda elem : elem.data)
 for elem in ans:
     if (elem.weather=='Rain'):
         print(elem.data,elem.day,elem.weather)
