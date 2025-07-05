@@ -6,8 +6,9 @@ n = input()
 n=list(n)
 ans = 0
 for i in n:
-    ans = ans*8 + int(i)
+    ans = ans*a + int(i)
 ans = int(ans)
+
 ans2= ""
 while(True):
     ans2 += str(ans%b)
