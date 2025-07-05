@@ -49,7 +49,7 @@ for i in range(n):
         # pos.append((1,now))
 
 
-ans = arr[left:right]
+
 white = arr.count(1)
 black=arr.count(2)
 
