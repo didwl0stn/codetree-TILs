@@ -34,7 +34,7 @@ for i in range(n):
     if dir[i] == 'L':
         for j in range(now, now-x[i],-1):
             arr[j] = 1
-        now = now-x[i]-1
+        now = now-x[i]+1
         if (now<left):
             left=now
     
