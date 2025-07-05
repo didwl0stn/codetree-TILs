@@ -9,33 +9,51 @@ for num, direction in commands:
     dir.append(direction)
 
 # Please write your code here.
-white=0
-black=0
-now=0
-pos=[(-1,0)] #흰색 1 검은색 2
+
+now=n*100
+arr= [0 for _ in range(2*n * 100)]
+arr.append(0)
+left = now
+right= now
 for i in range(n):
     if dir[i] == 'R':
-        if (pos[-1][0]==2):
-            black += x[i]-1
-            white = max(0,white-x[i]-1)
-        else:
-            black += x[i]
-            white = max(0,white-x[i])
-        now += x[i]-1
-        pos.append((2,now))
+        for j in range(now, now+x[i]):
+            arr[j] = 2
+        now = now+x[i]-1
+
+        if (now>right):
+            right=now
+        # if (pos[-1][0]==2):
+        #     black += x[i]-1
+        #     white = max(0,white-x[i]-1)
+        # else:
+        #     black += x[i]
+        #     white = max(0,white-x[i])
+        # now += x[i]-1
+        # pos.append((2,now))
     if dir[i] == 'L':
-        if (pos[-1][0]==1):
-            white += x[i]-1
-            black = max(0,black-x[i]-1)
-        else:
-            white += x[i]
-            black = max(0,black-x[i])
-        now += x[i]-1
+        for j in range(now, now-x[i],-1):
+            arr[j] = 1
+        now = now-x[i]-1
+        if (now<left):
+            left=now
+    
+        # if (pos[-1][0]==1):
+        #     white += x[i]-1
+        #     black = max(0,black-x[i]-1)
+        # else:
+        #     white += x[i]
+        #     black = max(0,black-x[i])
+        # now += x[i]-1
         
-        pos.append((1,now))
+        # pos.append((1,now))
 
 
-        
+ans = arr[left:right]
+white = arr.count(1)
+black=arr.count(2)
+
+
 print(white, black)
 
 
