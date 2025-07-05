@@ -12,15 +12,30 @@ for num, direction in commands:
 white=0
 black=0
 now=0
-arr=[]
+pos=[(-1,0)] #흰색 1 검은색 2
 for i in range(n):
     if dir[i] == 'R':
-        black += x[i]
-        white = max(0,white-x[i])
-
+        if (pos[-1][0]==2):
+            black += x[i]-1
+            white = max(0,white-x[i]-1)
+        else:
+            black += x[i]
+            white = max(0,white-x[i])
+        now += x[i]-1
+        pos.append((2,now))
     if dir[i] == 'L':
-        white += x[i]
-        black = max(0,black-x[i])
+        if (pos[-1][0]==1):
+            white += x[i]-1
+            black = max(0,black-x[i]-1)
+        else:
+            white += x[i]
+            black = max(0,black-x[i])
+        now += x[i]-1
+        
+        pos.append((1,now))
+
+
+        
 print(white, black)
 
 
