@@ -20,8 +20,7 @@ start = 1000000
 
 time_sum = sum(t)
 
-t.append(-1)
-t2.append(-1)
+
 
 a_nows=[]
 b_nows=[]
