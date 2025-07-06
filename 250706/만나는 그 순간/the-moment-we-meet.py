@@ -43,8 +43,10 @@ for i in range(m):
         b_nows.append(b_now)
 
         
-    
+ans = -1    
 for i in range(time_sum):
     if (a_nows[i]==b_nows[i]):
-        print(i+1)
+        ans = i+1
         break
+
+print(ans)
