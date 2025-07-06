@@ -15,12 +15,12 @@ arr = [
 
 for i in range(n):
     if (i%2==0):
-        for j in range(x2[i]-x1[i]):
-            for k in range(y2[i]-y1[i]):
+        for j in range(x1[i],x2[i]):
+            for k in range(y1[i],y2[i]):
                 arr[j][k] = 1
     else:
-        for j in range(x2[i]-x1[i]):
-            for k in range(y2[i]-y1[i]):
+        for j in range(x1[i],x2[i]):
+            for k in range(y1[i],y2[i]):
                 arr[j][k] = 2
 cnt=0
 for j in range(201):
